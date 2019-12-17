@@ -1,0 +1,353 @@
+2019-12-17 00:03:00.542  INFO 6732 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-17 00:03:01.762  INFO 6732 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-17 00:03:01.840  INFO 6732 --- [scheduling-1] c.q.t.business.task.TaskBehalfPay        : 开始执行次日下架定时任务
+2019-12-17 00:03:02.060  INFO 6732 --- [scheduling-1] c.q.t.business.task.TaskBehalfPay        : 次日下架定时任务-获取临时表数量：3
+2019-12-17 03:00:00.001  INFO 6732 --- [scheduling-1] c.q.t.business.task.TaskBehalfPay        : 易生定时任务删除RedisKey-开始执行
+2019-12-17 03:00:00.020  INFO 6732 --- [scheduling-1] c.q.t.business.task.TaskBehalfPay        : 易生定时任务删除RedisKey-获取代付成功的订单数量：0
+2019-12-17 10:02:23.596  INFO 7620 --- [main] c.qujie.timedtask.TimedTaskApplication   : Starting TimedTaskApplication on DESKTOP-PEUAVIJ with PID 7620 (D:\timed-task\target\classes started by qujie in D:\timed-task)
+2019-12-17 10:02:23.668  INFO 7620 --- [main] c.qujie.timedtask.TimedTaskApplication   : No active profile set, falling back to default profiles: default
+2019-12-17 10:02:28.526  INFO 7620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-17 10:02:28.531  INFO 7620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-17 10:02:28.604  INFO 7620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-12-17 10:02:29.707  INFO 7620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-17 10:02:30.932  INFO 7620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-12-17 10:02:30.967  INFO 7620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 10:02:30.968  INFO 7620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-17 10:02:31.230  INFO 7620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-17 10:02:31.231  INFO 7620 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7082 ms
+2019-12-17 10:02:33.874  INFO 7620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:02:34.679  INFO 7620 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-12-17 10:02:34.700  INFO 7620 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-12-17 10:02:34.704  INFO 7620 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2019-12-17 10:02:34.705  INFO 7620 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-12-17 10:02:34.708  INFO 7620 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-12-17 10:02:34.708  INFO 7620 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-12-17 10:02:34.708  INFO 7620 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2019-12-17 10:02:34.708  INFO 7620 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@23ee2ccf
+2019-12-17 10:02:34.722  INFO 7620 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-12-17 10:02:34.787  INFO 7620 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-12-17 10:02:34.788  INFO 7620 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-12-17 10:02:34.890  INFO 7620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-12-17 10:02:34.897  INFO 7620 --- [main] c.qujie.timedtask.TimedTaskApplication   : Started TimedTaskApplication in 13.769 seconds (JVM running for 19.885)
+2019-12-17 10:25:44.836  INFO 7620 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 10:25:44.838  INFO 7620 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-12-17 10:25:44.839  INFO 7620 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-12-17 10:25:44.839  INFO 7620 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-12-17 10:25:44.839  INFO 7620 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 10:25:44.840  INFO 7620 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-12-17 10:25:44.843  INFO 7620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:26:10.793  INFO 14160 --- [main] c.qujie.timedtask.TimedTaskApplication   : Starting TimedTaskApplication on DESKTOP-PEUAVIJ with PID 14160 (D:\timed-task\target\classes started by qujie in D:\timed-task)
+2019-12-17 10:26:10.799  INFO 14160 --- [main] c.qujie.timedtask.TimedTaskApplication   : No active profile set, falling back to default profiles: default
+2019-12-17 10:26:12.427  INFO 14160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-17 10:26:12.433  INFO 14160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-17 10:26:12.499  INFO 14160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-12-17 10:26:13.067  INFO 14160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-17 10:26:13.473  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-12-17 10:26:13.491  INFO 14160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 10:26:13.491  INFO 14160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-17 10:26:13.651  INFO 14160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-17 10:26:13.652  INFO 14160 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2703 ms
+2019-12-17 10:26:14.981  INFO 14160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:26:15.470  INFO 14160 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-12-17 10:26:15.487  INFO 14160 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-12-17 10:26:15.491  INFO 14160 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2019-12-17 10:26:15.492  INFO 14160 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-12-17 10:26:15.494  INFO 14160 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-12-17 10:26:15.494  INFO 14160 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-12-17 10:26:15.494  INFO 14160 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2019-12-17 10:26:15.494  INFO 14160 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5618fc1f
+2019-12-17 10:26:15.512  INFO 14160 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-12-17 10:26:15.562  INFO 14160 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-12-17 10:26:15.562  INFO 14160 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-12-17 10:26:15.626  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-12-17 10:26:15.632  INFO 14160 --- [main] c.qujie.timedtask.TimedTaskApplication   : Started TimedTaskApplication in 6.464 seconds (JVM running for 11.994)
+2019-12-17 10:26:39.895  INFO 14160 --- [http-nio-8771-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 10:26:39.896  INFO 14160 --- [http-nio-8771-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-17 10:26:39.932  INFO 14160 --- [http-nio-8771-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2019-12-17 10:26:40.263  INFO 14160 --- [http-nio-8771-exec-1] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求传入参数：{	"money":"0",	"subsidyPayment":"1000",	"cardnum":"621452001002876054",	"bankacctname":"宋英惠",	"requestId":"B2000000808727927",	"cardKind":"D",	"accType":"00",	"artificial":"1",	"bankCode":""}
+2019-12-17 10:26:40.575  INFO 14160 --- [http-nio-8771-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-17 10:27:03.494  INFO 14160 --- [http-nio-8771-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-17 10:27:03.687  INFO 14160 --- [http-nio-8771-exec-1] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求参数：{bankCode=, artificial=1, stlmAmt=0, subsidyPayment=1000, amtType=0, requestId=B2000000808727927, accountNo=621452001002876054, accName=宋英惠, cardKind=D, accType=00}
+2019-12-17 10:27:04.123  WARN 14160 --- [http-nio-8771-exec-1] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:27:04.165  INFO 14160 --- [task-1] com.qujie.timedtask.async.AsyncTask      : 易生代付查询获取参数：{"tradeCode":"D00001","acceRetCode":"AAAAAA","accRetMsg":"成功[00000000000]","reqTime":"20191217102703","procTime":"20191217102704","channelId":"D01X00000000615","requestId":"B2000000808727927","signStr":"CC88CE387FD9E66068D73E018B3CA6FBAD8654A17A2689F7","data":{"accountNo":"621452001002876054","accName":"宋英惠","accType":"00","cardKind":"D","bankCode":"","bankName":"","channelWater":"20191217102704876054000302349385","recordId":"00000000000302349385","stlmAmt":"1000","amtType":"0","otherCode":"83111004816002634175571"}}
+;20191217
+2019-12-17 10:27:04.171  INFO 14160 --- [task-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000000808727927","payDate":"20191217"},"requestId":"9000000323002834","tradeCode":"D00002","reqTime":"20191217102704","signStr":"6355E14D5C90059FE917AA53C380DE8D536528058B4245B0F631256CFF00409C","channelId":"D01X00000000615"}
+2019-12-17 10:27:04.201  INFO 14160 --- [http-nio-8771-exec-1] c.q.t.b.controller.BehalfPayController   : 人工手动代付响应结果：true
+2019-12-17 10:27:04.361  WARN 14160 --- [task-1] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:27:04.365  INFO 14160 --- [task-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217102704","procTime":"20191217102704","channelId":"D01X00000000615","requestId":"9000000323002834","signStr":"6355E14D5C90059FE917AA53C380DE8D536528058B4245B0F631256CFF00409C","data":{"oldRequestId":"B2000000808727927","retMsg":"交易已受理，请稍后查询交易结果[05200013109]","retCode":"BBBBBB","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217102704876054000302349385","stlmAmt":"","payFlag":"","recordId":"00000000000302349385","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:27:06.370  INFO 14160 --- [task-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000000808727927","payDate":"20191217"},"requestId":"9000000163570302","tradeCode":"D00002","reqTime":"20191217102706","signStr":"6355E14D5C90059FE917AA53C380DE8DA6DDE2B4F6EB95505CAED40A60D16BC7","channelId":"D01X00000000615"}
+2019-12-17 10:27:06.562  WARN 14160 --- [task-1] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:27:06.564  INFO 14160 --- [task-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217102706","procTime":"20191217102707","channelId":"D01X00000000615","requestId":"9000000163570302","signStr":"6355E14D5C90059FE917AA53C380DE8DA6DDE2B4F6EB95505CAED40A60D16BC7","data":{"oldRequestId":"B2000000808727927","retMsg":"成功[00000000000]","retCode":"000000","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217102704876054000302349385","stlmAmt":"","payFlag":"","recordId":"00000000000302349385","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:27:06.591  INFO 14160 --- [task-1] com.qujie.timedtask.async.AsyncTask      : 易生代付查询插入记录状态：1
+2019-12-17 10:29:37.054  INFO 14160 --- [http-nio-8771-exec-3] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求传入参数：{	"money":"0",	"subsidyPayment":"1000",	"cardnum":"621452001001714744",	"bankacctname":"朱敏卿",	"requestId":"B2000001513959119",	"cardKind":"D",	"accType":"00",	"artificial":"1",	"bankCode":""}
+2019-12-17 10:29:37.090  INFO 14160 --- [http-nio-8771-exec-3] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求参数：{bankCode=, artificial=1, stlmAmt=0, subsidyPayment=1000, amtType=0, requestId=B2000001513959119, accountNo=621452001001714744, accName=朱敏卿, cardKind=D, accType=00}
+2019-12-17 10:29:37.319  WARN 14160 --- [http-nio-8771-exec-3] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:29:37.331  INFO 14160 --- [task-2] com.qujie.timedtask.async.AsyncTask      : 易生代付查询获取参数：{"tradeCode":"D00001","acceRetCode":"AAAAAA","accRetMsg":"成功[00000000000]","reqTime":"20191217102937","procTime":"20191217102937","channelId":"D01X00000000615","requestId":"B2000001513959119","signStr":"283E869E5F2F9A54BAD893A46DC71E2103FF061B295F307B","data":{"accountNo":"621452001001714744","accName":"朱敏卿","accType":"00","cardKind":"D","bankCode":"","bankName":"","channelWater":"20191217102937714744000302354641","recordId":"00000000000302354641","stlmAmt":"1000","amtType":"0","otherCode":"83111004816002634175571"}}
+;20191217
+2019-12-17 10:29:37.334  INFO 14160 --- [task-2] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000001513959119","payDate":"20191217"},"requestId":"9000000067518000","tradeCode":"D00002","reqTime":"20191217102937","signStr":"640F588A0B5FC09037D66EA1CBDA9A6DEA456851E5216F40E91F033F2BECE899","channelId":"D01X00000000615"}
+2019-12-17 10:29:37.335  INFO 14160 --- [http-nio-8771-exec-3] c.q.t.b.controller.BehalfPayController   : 人工手动代付响应结果：true
+2019-12-17 10:29:37.507  WARN 14160 --- [task-2] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:29:37.508  INFO 14160 --- [task-2] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217102937","procTime":"20191217102938","channelId":"D01X00000000615","requestId":"9000000067518000","signStr":"640F588A0B5FC09037D66EA1CBDA9A6DEA456851E5216F40E91F033F2BECE899","data":{"oldRequestId":"B2000001513959119","retMsg":"交易已受理，请稍后查询交易结果[05200013109]","retCode":"BBBBBB","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217102937714744000302354641","stlmAmt":"","payFlag":"","recordId":"00000000000302354641","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:29:39.512  INFO 14160 --- [task-2] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000001513959119","payDate":"20191217"},"requestId":"9000001730468530","tradeCode":"D00002","reqTime":"20191217102939","signStr":"640F588A0B5FC09037D66EA1CBDA9A6DD8DC1142CB16790DE7A63B236E715810","channelId":"D01X00000000615"}
+2019-12-17 10:29:39.699  WARN 14160 --- [task-2] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:29:39.700  INFO 14160 --- [task-2] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217102939","procTime":"20191217102940","channelId":"D01X00000000615","requestId":"9000001730468530","signStr":"640F588A0B5FC09037D66EA1CBDA9A6DD8DC1142CB16790DE7A63B236E715810","data":{"oldRequestId":"B2000001513959119","retMsg":"成功[00000000000]","retCode":"000000","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217102937714744000302354641","stlmAmt":"","payFlag":"","recordId":"00000000000302354641","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:29:39.746  INFO 14160 --- [task-2] com.qujie.timedtask.async.AsyncTask      : 易生代付查询插入记录状态：1
+2019-12-17 10:30:39.972  INFO 14160 --- [http-nio-8771-exec-6] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求传入参数：{	"money":"0",	"subsidyPayment":"500",	"cardnum":"621452001002740557",	"bankacctname":"梅养林",	"requestId":"B2000002108717969",	"cardKind":"D",	"accType":"00",	"artificial":"1",	"bankCode":""}
+2019-12-17 10:30:40.011  INFO 14160 --- [http-nio-8771-exec-6] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求参数：{bankCode=, artificial=1, stlmAmt=0, subsidyPayment=500, amtType=0, requestId=B2000002108717969, accountNo=621452001002740557, accName=梅养林, cardKind=D, accType=00}
+2019-12-17 10:30:40.202  WARN 14160 --- [http-nio-8771-exec-6] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:30:40.206  INFO 14160 --- [task-3] com.qujie.timedtask.async.AsyncTask      : 易生代付查询获取参数：{"tradeCode":"D00001","acceRetCode":"AAAAAA","accRetMsg":"成功[00000000000]","reqTime":"20191217103040","procTime":"20191217103040","channelId":"D01X00000000615","requestId":"B2000002108717969","signStr":"AFA1FDCD44EB301DBB11C4B351B8A826748414486628D1DA","data":{"accountNo":"621452001002740557","accName":"梅养林","accType":"00","cardKind":"D","bankCode":"","bankName":"","channelWater":"20191217103040740557000302356785","recordId":"00000000000302356785","stlmAmt":"500","amtType":"0","otherCode":"83111004816002634175571"}}
+;20191217
+2019-12-17 10:30:40.213  INFO 14160 --- [task-3] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000002108717969","payDate":"20191217"},"requestId":"9000001967354339","tradeCode":"D00002","reqTime":"20191217103040","signStr":"CAA6AA82F01DA13B37D66EA1CBDA9A6DAEFC9CD510258F27F5D81323C07BE046","channelId":"D01X00000000615"}
+2019-12-17 10:30:40.371  WARN 14160 --- [task-3] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:30:40.372  INFO 14160 --- [task-3] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217103040","procTime":"20191217103041","channelId":"D01X00000000615","requestId":"9000001967354339","signStr":"CAA6AA82F01DA13B37D66EA1CBDA9A6DAEFC9CD510258F27F5D81323C07BE046","data":{"oldRequestId":"B2000002108717969","retMsg":"交易已受理，请稍后查询交易结果[05200013109]","retCode":"BBBBBB","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217103040740557000302356785","stlmAmt":"","payFlag":"","recordId":"00000000000302356785","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:30:40.516  INFO 14160 --- [http-nio-8771-exec-6] c.q.t.b.controller.BehalfPayController   : 人工手动代付响应结果：true
+2019-12-17 10:30:42.375  INFO 14160 --- [task-3] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000002108717969","payDate":"20191217"},"requestId":"9000000899521646","tradeCode":"D00002","reqTime":"20191217103042","signStr":"CAA6AA82F01DA13B37D66EA1CBDA9A6D2C82E56EA08C56A1791E87515E75DE38","channelId":"D01X00000000615"}
+2019-12-17 10:30:42.541  WARN 14160 --- [task-3] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:30:42.542  INFO 14160 --- [task-3] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217103042","procTime":"20191217103043","channelId":"D01X00000000615","requestId":"9000000899521646","signStr":"CAA6AA82F01DA13B37D66EA1CBDA9A6D2C82E56EA08C56A1791E87515E75DE38","data":{"oldRequestId":"B2000002108717969","retMsg":"成功[00000000000]","retCode":"000000","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217103040740557000302356785","stlmAmt":"","payFlag":"","recordId":"00000000000302356785","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:30:42.566  INFO 14160 --- [task-3] com.qujie.timedtask.async.AsyncTask      : 易生代付查询插入记录状态：1
+2019-12-17 10:31:41.529  INFO 14160 --- [http-nio-8771-exec-10] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求传入参数：{	"money":"0",	"subsidyPayment":"1000",	"cardnum":"621452001002950172",	"bankacctname":"赵泽刚",	"requestId":"B2000000165292341",	"cardKind":"D",	"accType":"00",	"artificial":"1",	"bankCode":""}
+2019-12-17 10:31:41.558  INFO 14160 --- [http-nio-8771-exec-10] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求参数：{bankCode=, artificial=1, stlmAmt=0, subsidyPayment=1000, amtType=0, requestId=B2000000165292341, accountNo=621452001002950172, accName=赵泽刚, cardKind=D, accType=00}
+2019-12-17 10:31:41.749  WARN 14160 --- [http-nio-8771-exec-10] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:31:41.750  INFO 14160 --- [task-4] com.qujie.timedtask.async.AsyncTask      : 易生代付查询获取参数：{"tradeCode":"D00001","acceRetCode":"AAAAAA","accRetMsg":"成功[00000000000]","reqTime":"20191217103141","procTime":"20191217103142","channelId":"D01X00000000615","requestId":"B2000000165292341","signStr":"7B2EEAE6EF07E53CA395088D0473ED2240E25ABBB6336091","data":{"accountNo":"621452001002950172","accName":"赵泽刚","accType":"00","cardKind":"D","bankCode":"","bankName":"","channelWater":"20191217103142950172000302358777","recordId":"00000000000302358777","stlmAmt":"1000","amtType":"0","otherCode":"83111004816002634175571"}}
+;20191217
+2019-12-17 10:31:41.758  INFO 14160 --- [http-nio-8771-exec-10] c.q.t.b.controller.BehalfPayController   : 人工手动代付响应结果：true
+2019-12-17 10:31:41.764  INFO 14160 --- [task-4] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000000165292341","payDate":"20191217"},"requestId":"9000001201731759","tradeCode":"D00002","reqTime":"20191217103141","signStr":"782D8B167A45ABAA7DB79C307190BBECCBBFDC244D00916D9002194D7AADA907","channelId":"D01X00000000615"}
+2019-12-17 10:31:41.942  WARN 14160 --- [task-4] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:31:41.943  INFO 14160 --- [task-4] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217103141","procTime":"20191217103142","channelId":"D01X00000000615","requestId":"9000001201731759","signStr":"782D8B167A45ABAA7DB79C307190BBECCBBFDC244D00916D9002194D7AADA907","data":{"oldRequestId":"B2000000165292341","retMsg":"交易已受理，请稍后查询交易结果[05200013109]","retCode":"BBBBBB","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217103142950172000302358777","stlmAmt":"","payFlag":"","recordId":"00000000000302358777","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:31:43.944  INFO 14160 --- [task-4] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000000165292341","payDate":"20191217"},"requestId":"9000000227634342","tradeCode":"D00002","reqTime":"20191217103143","signStr":"782D8B167A45ABAA7DB79C307190BBECE22147A27CAB01658AC97573F7EB1802","channelId":"D01X00000000615"}
+2019-12-17 10:31:44.108  WARN 14160 --- [task-4] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:31:44.109  INFO 14160 --- [task-4] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217103143","procTime":"20191217103144","channelId":"D01X00000000615","requestId":"9000000227634342","signStr":"782D8B167A45ABAA7DB79C307190BBECE22147A27CAB01658AC97573F7EB1802","data":{"oldRequestId":"B2000000165292341","retMsg":"成功[00000000000]","retCode":"000000","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217103142950172000302358777","stlmAmt":"","payFlag":"","recordId":"00000000000302358777","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:31:44.127  INFO 14160 --- [task-4] com.qujie.timedtask.async.AsyncTask      : 易生代付查询插入记录状态：1
+2019-12-17 10:34:08.348  INFO 14160 --- [http-nio-8771-exec-4] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求传入参数：{	"money":"0",	"subsidyPayment":"500",	"cardnum":"621452001001714744",	"bankacctname":"朱敏卿",	"requestId":"B2000000939323629",	"cardKind":"D",	"accType":"00",	"artificial":"1",	"bankCode":""}
+2019-12-17 10:34:08.381  INFO 14160 --- [http-nio-8771-exec-4] c.q.t.b.controller.BehalfPayController   : 人工手动代付请求参数：{bankCode=, artificial=1, stlmAmt=0, subsidyPayment=500, amtType=0, requestId=B2000000939323629, accountNo=621452001001714744, accName=朱敏卿, cardKind=D, accType=00}
+2019-12-17 10:34:08.584  WARN 14160 --- [http-nio-8771-exec-4] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:34:08.586  INFO 14160 --- [task-5] com.qujie.timedtask.async.AsyncTask      : 易生代付查询获取参数：{"tradeCode":"D00001","acceRetCode":"AAAAAA","accRetMsg":"成功[00000000000]","reqTime":"20191217103408","procTime":"20191217103409","channelId":"D01X00000000615","requestId":"B2000000939323629","signStr":"283E869E5F2F9A54BBB05B21F249BFF1B6154458E8010F66","data":{"accountNo":"621452001001714744","accName":"朱敏卿","accType":"00","cardKind":"D","bankCode":"","bankName":"","channelWater":"20191217103409714744000302363527","recordId":"00000000000302363527","stlmAmt":"500","amtType":"0","otherCode":"83111004816002634175571"}}
+;20191217
+2019-12-17 10:34:08.591  INFO 14160 --- [task-5] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000000939323629","payDate":"20191217"},"requestId":"9000000995157066","tradeCode":"D00002","reqTime":"20191217103408","signStr":"B2656EA3B81A6EB037D66EA1CBDA9A6D1AB45CB9D216F567C9B939D81662AAA4","channelId":"D01X00000000615"}
+2019-12-17 10:34:08.637  INFO 14160 --- [http-nio-8771-exec-4] c.q.t.b.controller.BehalfPayController   : 人工手动代付响应结果：true
+2019-12-17 10:34:08.776  WARN 14160 --- [task-5] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:34:08.776  INFO 14160 --- [task-5] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217103408","procTime":"20191217103409","channelId":"D01X00000000615","requestId":"9000000995157066","signStr":"B2656EA3B81A6EB037D66EA1CBDA9A6D1AB45CB9D216F567C9B939D81662AAA4","data":{"oldRequestId":"B2000000939323629","retMsg":"交易已受理，请稍后查询交易结果[05200013109]","retCode":"BBBBBB","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217103409714744000302363527","stlmAmt":"","payFlag":"","recordId":"00000000000302363527","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:34:10.779  INFO 14160 --- [task-5] c.q.timedtask.business.task.YSBehalfPay  : 易生代付-发送请求：{"deviceIp":"","data":{"otherCode":"83111004816002634175571","oldRequestId":"B2000000939323629","payDate":"20191217"},"requestId":"9000000295457090","tradeCode":"D00002","reqTime":"20191217103410","signStr":"B2656EA3B81A6EB037D66EA1CBDA9A6DE22147A27CAB0165BAABEB34B699B203","channelId":"D01X00000000615"}
+2019-12-17 10:34:10.957  WARN 14160 --- [task-5] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:34:10.958  INFO 14160 --- [task-5] c.q.timedtask.business.task.YSBehalfPay  : 易生代付查询响应：{"tradeCode":"D00002","acceRetCode":"000000","accRetMsg":"成功[00000000000]","reqTime":"20191217103410","procTime":"20191217103411","channelId":"D01X00000000615","requestId":"9000000295457090","signStr":"B2656EA3B81A6EB037D66EA1CBDA9A6DE22147A27CAB0165BAABEB34B699B203","data":{"oldRequestId":"B2000000939323629","retMsg":"成功[00000000000]","retCode":"000000","accountNo":"","accName":"","accType":"","cardKind":"","bankCode":"","bankName":"","channelWater":"20191217103409714744000302363527","stlmAmt":"","payFlag":"","recordId":"00000000000302363527","otherCode":"83111004816002634175571"}}
+
+2019-12-17 10:34:10.982  INFO 14160 --- [task-5] com.qujie.timedtask.async.AsyncTask      : 易生代付查询插入记录状态：1
+2019-12-17 10:38:30.890  INFO 14160 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 10:38:30.892  INFO 14160 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-12-17 10:38:30.893  INFO 14160 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-12-17 10:38:30.893  INFO 14160 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-12-17 10:38:30.893  INFO 14160 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 10:38:30.894  INFO 14160 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-12-17 10:38:30.897  INFO 14160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:38:30.930  INFO 14160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-17 10:38:30.937  INFO 14160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-17 10:38:47.739  INFO 14664 --- [main] c.qujie.timedtask.TimedTaskApplication   : Starting TimedTaskApplication on DESKTOP-PEUAVIJ with PID 14664 (D:\timed-task\target\classes started by qujie in D:\timed-task)
+2019-12-17 10:38:47.746  INFO 14664 --- [main] c.qujie.timedtask.TimedTaskApplication   : No active profile set, falling back to default profiles: default
+2019-12-17 10:38:49.185  INFO 14664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-17 10:38:49.189  INFO 14664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-17 10:38:49.225  INFO 14664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-12-17 10:38:49.672  INFO 14664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-17 10:38:50.161  INFO 14664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-12-17 10:38:50.175  INFO 14664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 10:38:50.176  INFO 14664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-17 10:38:50.293  INFO 14664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-17 10:38:50.294  INFO 14664 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2419 ms
+2019-12-17 10:38:51.553  INFO 14664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:38:52.233  INFO 14664 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-12-17 10:38:52.252  INFO 14664 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-12-17 10:38:52.255  INFO 14664 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2019-12-17 10:38:52.257  INFO 14664 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-12-17 10:38:52.258  INFO 14664 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-12-17 10:38:52.259  INFO 14664 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-12-17 10:38:52.259  INFO 14664 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2019-12-17 10:38:52.259  INFO 14664 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7ac48f05
+2019-12-17 10:38:52.277  INFO 14664 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-12-17 10:38:52.335  INFO 14664 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-12-17 10:38:52.335  INFO 14664 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-12-17 10:38:52.398  INFO 14664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-12-17 10:38:52.403  INFO 14664 --- [main] c.qujie.timedtask.TimedTaskApplication   : Started TimedTaskApplication in 5.89 seconds (JVM running for 8.825)
+2019-12-17 10:59:07.699  INFO 14664 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 10:59:07.703  INFO 14664 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-12-17 10:59:07.704  INFO 14664 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-12-17 10:59:07.705  INFO 14664 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-12-17 10:59:07.708  INFO 14664 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 10:59:07.712  INFO 14664 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-12-17 10:59:07.723  INFO 14664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:59:19.279  INFO 2856 --- [main] c.qujie.timedtask.TimedTaskApplication   : Starting TimedTaskApplication on DESKTOP-PEUAVIJ with PID 2856 (D:\timed-task\target\classes started by qujie in D:\timed-task)
+2019-12-17 10:59:19.285  INFO 2856 --- [main] c.qujie.timedtask.TimedTaskApplication   : No active profile set, falling back to default profiles: default
+2019-12-17 10:59:21.332  INFO 2856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-17 10:59:21.337  INFO 2856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-17 10:59:21.393  INFO 2856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-12-17 10:59:22.004  INFO 2856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-17 10:59:22.621  INFO 2856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-12-17 10:59:22.635  INFO 2856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 10:59:22.635  INFO 2856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-17 10:59:22.810  INFO 2856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-17 10:59:22.810  INFO 2856 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3407 ms
+2019-12-17 10:59:24.269  INFO 2856 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 10:59:24.778  INFO 2856 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-12-17 10:59:24.803  INFO 2856 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-12-17 10:59:24.807  INFO 2856 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2019-12-17 10:59:24.808  INFO 2856 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-12-17 10:59:24.810  INFO 2856 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-12-17 10:59:24.810  INFO 2856 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-12-17 10:59:24.810  INFO 2856 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2019-12-17 10:59:24.810  INFO 2856 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@b01cb8d
+2019-12-17 10:59:24.826  INFO 2856 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-12-17 10:59:24.894  INFO 2856 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-12-17 10:59:24.895  INFO 2856 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-12-17 10:59:24.964  INFO 2856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-12-17 10:59:24.970  INFO 2856 --- [main] c.qujie.timedtask.TimedTaskApplication   : Started TimedTaskApplication in 6.848 seconds (JVM running for 9.014)
+2019-12-17 10:59:33.250  INFO 2856 --- [http-nio-8771-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 10:59:33.251  INFO 2856 --- [http-nio-8771-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-17 10:59:33.265  INFO 2856 --- [http-nio-8771-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-12-17 10:59:34.444  INFO 2856 --- [http-nio-8771-exec-2] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度查询-发送请求：{"deviceIp":"","data":"","requestId":"78998120","tradeCode":"E00001","reqTime":"20191217105933","signStr":"314C6C5E30F896C816E23E07398366F3","channelId":"D01X00000000615"}
+2019-12-17 10:59:34.593  WARN 2856 --- [http-nio-8771-exec-2] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 10:59:34.598  INFO 2856 --- [http-nio-8771-exec-2] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度查询-响应：{"tradeCode":"E00001","acceRetCode":"000000","accRetMsg":"查询成功","reqTime":"20191217105933","procTime":"20191217105935","channelId":"D01X00000000615","requestId":"78998120","signStr":"314C6C5E30F896C816E23E07398366F3","data":{"day_totalbal":500000,"day_prevbal":0,"cur_amt":4.500000,"stlm_amt":82200,"stlm_preamt":52200,"day_newbal":431751.970000,"stlm_newamt":21810.260000}}
+
+2019-12-17 11:06:17.139  INFO 2856 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 11:06:17.141  INFO 2856 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-12-17 11:06:17.142  INFO 2856 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-12-17 11:06:17.143  INFO 2856 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-12-17 11:06:17.143  INFO 2856 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 11:06:17.144  INFO 2856 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-12-17 11:06:17.146  INFO 2856 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-17 11:06:33.787  INFO 15972 --- [main] c.qujie.timedtask.TimedTaskApplication   : Starting TimedTaskApplication on DESKTOP-PEUAVIJ with PID 15972 (D:\timed-task\target\classes started by qujie in D:\timed-task)
+2019-12-17 11:06:33.795  INFO 15972 --- [main] c.qujie.timedtask.TimedTaskApplication   : No active profile set, falling back to default profiles: default
+2019-12-17 11:06:35.324  INFO 15972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-17 11:06:35.329  INFO 15972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-17 11:06:35.365  INFO 15972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-12-17 11:06:35.860  INFO 15972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-17 11:06:36.243  INFO 15972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-12-17 11:06:36.260  INFO 15972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 11:06:36.261  INFO 15972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-17 11:06:36.429  INFO 15972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-17 11:06:36.429  INFO 15972 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2488 ms
+2019-12-17 11:06:37.833  INFO 15972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 11:06:38.438  INFO 15972 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-12-17 11:06:38.453  INFO 15972 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-12-17 11:06:38.458  INFO 15972 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2019-12-17 11:06:38.460  INFO 15972 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-12-17 11:06:38.461  INFO 15972 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-12-17 11:06:38.462  INFO 15972 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-12-17 11:06:38.462  INFO 15972 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2019-12-17 11:06:38.462  INFO 15972 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3751acd7
+2019-12-17 11:06:38.479  INFO 15972 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-12-17 11:06:38.528  INFO 15972 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-12-17 11:06:38.528  INFO 15972 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-12-17 11:06:38.585  INFO 15972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-12-17 11:06:38.590  INFO 15972 --- [main] c.qujie.timedtask.TimedTaskApplication   : Started TimedTaskApplication in 6.341 seconds (JVM running for 8.774)
+2019-12-17 11:11:28.111  INFO 15972 --- [http-nio-8771-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 11:11:28.112  INFO 15972 --- [http-nio-8771-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-17 11:11:28.133  INFO 15972 --- [http-nio-8771-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-12-17 11:11:29.202  INFO 15972 --- [http-nio-8771-exec-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":10,"payDate":"20191201"},"requestId":"94250253","tradeCode":"E00002","reqTime":"20191217111128","signStr":"44834315D369695E1B46BCEFFB6DCE5E","channelId":"D01X00000000615"}
+2019-12-17 11:11:29.487  WARN 15972 --- [http-nio-8771-exec-1] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 11:12:47.052  INFO 15972 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 11:12:47.054  INFO 15972 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-12-17 11:12:47.055  INFO 15972 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-12-17 11:12:47.056  INFO 15972 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-12-17 11:12:47.056  INFO 15972 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 11:12:47.058  INFO 15972 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-12-17 11:12:47.060  INFO 15972 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-17 11:12:59.532  INFO 6272 --- [main] c.qujie.timedtask.TimedTaskApplication   : Starting TimedTaskApplication on DESKTOP-PEUAVIJ with PID 6272 (D:\timed-task\target\classes started by qujie in D:\timed-task)
+2019-12-17 11:12:59.540  INFO 6272 --- [main] c.qujie.timedtask.TimedTaskApplication   : No active profile set, falling back to default profiles: default
+2019-12-17 11:13:01.318  INFO 6272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-17 11:13:01.323  INFO 6272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-17 11:13:01.369  INFO 6272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-12-17 11:13:01.927  INFO 6272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-17 11:13:02.344  INFO 6272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-12-17 11:13:02.359  INFO 6272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 11:13:02.360  INFO 6272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-17 11:13:02.509  INFO 6272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-17 11:13:02.509  INFO 6272 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2849 ms
+2019-12-17 11:13:03.812  INFO 6272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 11:13:04.307  INFO 6272 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-12-17 11:13:04.338  INFO 6272 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-12-17 11:13:04.343  INFO 6272 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2019-12-17 11:13:04.346  INFO 6272 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-12-17 11:13:04.349  INFO 6272 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-12-17 11:13:04.349  INFO 6272 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-12-17 11:13:04.350  INFO 6272 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2019-12-17 11:13:04.350  INFO 6272 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@69b3886f
+2019-12-17 11:13:04.367  INFO 6272 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-12-17 11:13:04.429  INFO 6272 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-12-17 11:13:04.429  INFO 6272 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-12-17 11:13:04.507  INFO 6272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-12-17 11:13:04.520  INFO 6272 --- [main] c.qujie.timedtask.TimedTaskApplication   : Started TimedTaskApplication in 6.056 seconds (JVM running for 8.154)
+2019-12-17 11:18:00.974  INFO 6272 --- [http-nio-8771-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 11:18:00.975  INFO 6272 --- [http-nio-8771-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-17 11:18:00.993  INFO 6272 --- [http-nio-8771-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-17 11:18:01.921  INFO 6272 --- [http-nio-8771-exec-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"42432741","tradeCode":"E00002","reqTime":"20191217111801","signStr":"9FBBE78C4F971838EEC0C83843342532","channelId":"D01X00000000615"}
+2019-12-17 11:18:02.128  WARN 6272 --- [http-nio-8771-exec-1] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 11:33:50.597  INFO 6272 --- [http-nio-8771-exec-3] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"35139414","tradeCode":"E00002","reqTime":"20191217113350","signStr":"02E162128CA73156DEF4BE782E81D8CD","channelId":"D01X00000000615"}
+2019-12-17 11:33:50.694  WARN 6272 --- [http-nio-8771-exec-3] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 11:57:00.578  INFO 6272 --- [http-nio-8771-exec-5] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"18142430","tradeCode":"E00002","reqTime":"20191217115700","signStr":"245C270AA8F2D87B075A01B9E42ABF64","channelId":"D01X00000000615"}
+2019-12-17 11:57:00.667  WARN 6272 --- [http-nio-8771-exec-5] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 11:57:01.718  INFO 6272 --- [http-nio-8771-exec-6] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"83914686","tradeCode":"E00002","reqTime":"20191217115701","signStr":"024A3CB22FF2B744C5B8466722C7C1F9","channelId":"D01X00000000615"}
+2019-12-17 11:57:01.797  WARN 6272 --- [http-nio-8771-exec-6] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 11:57:02.344  INFO 6272 --- [http-nio-8771-exec-8] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"43472490","tradeCode":"E00002","reqTime":"20191217115702","signStr":"DAB40A6FFEE19F96453FCC1D683C2D7E","channelId":"D01X00000000615"}
+2019-12-17 11:57:02.424  WARN 6272 --- [http-nio-8771-exec-8] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 12:38:05.706  INFO 6272 --- [http-nio-8771-exec-9] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"31591036","tradeCode":"E00002","reqTime":"20191217123805","signStr":"58DC9D4E0C437D944BBDE640F19643D7","channelId":"D01X00000000615"}
+2019-12-17 12:38:05.801  WARN 6272 --- [http-nio-8771-exec-9] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 12:38:06.665  INFO 6272 --- [http-nio-8771-exec-10] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"73211093","tradeCode":"E00002","reqTime":"20191217123806","signStr":"56FCAC271EB54CD589E546715FE0C287","channelId":"D01X00000000615"}
+2019-12-17 12:38:06.745  WARN 6272 --- [http-nio-8771-exec-10] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 12:38:07.073  INFO 6272 --- [http-nio-8771-exec-1] c.q.timedtask.business.task.YSBehalfPay  : 易生代付额度调整明细查询-发送请求：{"deviceIp":"","data":{"pageNumber":0,"pageSize":30,"payDate":"20191201"},"requestId":"62247698","tradeCode":"E00002","reqTime":"20191217123807","signStr":"E5A67ED1C49D8FF44BB7F45CBCDE6E4D","channelId":"D01X00000000615"}
+2019-12-17 12:38:07.353  WARN 6272 --- [http-nio-8771-exec-1] o.a.commons.httpclient.HttpMethodBase    : Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2019-12-17 13:04:54.431  INFO 6272 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 13:04:54.451  INFO 6272 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-12-17 13:04:54.461  INFO 6272 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-12-17 13:04:54.468  INFO 6272 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-12-17 13:04:54.468  INFO 6272 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-12-17 13:04:54.473  INFO 6272 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-12-17 13:04:54.490  INFO 6272 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

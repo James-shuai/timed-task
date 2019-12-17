@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://61.240.30.245:1433;DatabaseName=FunStreetDB
+#    url: jdbc:sqlserver://172.16.2.162:1433;databaseName=FunStreetDB
+    username: sa
+    password: '!QAZxsw2'
+  output:
+    ansi:
+      enabled: detect
+  redis:
+    host: 192.168.1.200
+#    host: 172.16.2.183
+    port: 6379
+    password: '!QAZxsw2'
+    database: 0
+smpay:
+  #短信地址
+  messageurl: http://172.16.2.151:8088/sms/msgService/sendMsg
+server:
+  port: 8771
+
+logging:
+  level:
+    root: info
+  file: ./logs/task.log
